@@ -1,7 +1,7 @@
 import PyPDF2
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 
 def extract_text_from_pdf(pdf_file):
     reader = PyPDF2.PdfReader(pdf_file)
